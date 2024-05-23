@@ -1,6 +1,8 @@
 Technologies used:
 
 
-(/) Spring Boot, Rest Controller
+(/) Spring Boot, Rest Controller 
+
 (/) DockerFile, DockerCompose
+
 (/) 
