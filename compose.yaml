@@ -1,6 +1,20 @@
 version: '3.8'
 
 services:
+
+  postgres:
+    image: 'postgres:13.1-alpine'
+    ports:
+      - "5432:5432"
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=pass-postgres
+      - POSTGRES_PASSWORD=pass-postgres
+      - POSTGRES_DB=testdb
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+
   spring-app:
     build:
       context: .
@@ -8,3 +22,13 @@ services:
     container_name: spring-app
     ports:
       - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/testdb
+      SPRING_DATASOURCE_USERNAME: pass-postgres
+      SPRING_DATASOURCE_PASSWORD: pass-postgres
+
+
+volumes:
+  postgres_data:
