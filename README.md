@@ -5,4 +5,6 @@ Technologies used:
 
 (/) DockerFile, DockerCompose
 
-(/) 
+(/) Spring Data, DataJpaTest
+
+(x) 
