@@ -7,4 +7,5 @@ Technologies used:
 
 (/) Spring Data, DataJpaTest
 
-(x) 
+(/) postgres DB
+
