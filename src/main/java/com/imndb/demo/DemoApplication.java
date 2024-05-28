@@ -24,11 +24,7 @@ public class DemoApplication {
 
 	@EventListener(ApplicationReadyEvent.class)
 	public void initDb(){
-		// TODO remove
-		Url url = new Url();
-		String address = "initial url";
-		url.setAddress(address);
-		urlRepository.save(url);
+
 	}
 
 }

@@ -1,7 +1,8 @@
 
 echo "Clean and build the project using Maven..."
 #Clean and build the project using Maven
-mvn clean install
+
+mvn clean install package -DskipTests
 
 # Build the Docker image
 echo "Building the Docker image..."

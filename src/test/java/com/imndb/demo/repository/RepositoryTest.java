@@ -22,8 +22,9 @@ public class RepositoryTest {
 
     @Test
     public void testAddUrl() {
-        Url url = new Url();
         String address = "address";
+        Url url = new Url();
+        url.setAddress(address);
         url.setAddress(address);
         Url savedUrl = urlRepository.save(url);
         assertNotNull(savedUrl);
