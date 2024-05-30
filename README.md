@@ -9,7 +9,7 @@ Technologies used:
 
 (/) postgres DB
 
-(/) TestContainers
+(/) TestContainers - Postgres
 
-(/)
+(/) TestContainers - Kafka
 
