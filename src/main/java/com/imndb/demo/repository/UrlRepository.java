@@ -10,4 +10,7 @@ import java.util.List;
 public interface UrlRepository extends JpaRepository<Url, Long> {
 
     List<Url> findByAddressContains(String urlContains);
+
+    Url findByAddress(String address);
+
 }
