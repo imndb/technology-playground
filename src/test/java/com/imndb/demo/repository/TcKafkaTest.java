@@ -43,7 +43,7 @@ public class TcKafkaTest {
     private KafkaTemplate<String, Object> kafkaTemplate;
 
     @Test
-    void shouldHandleProductPriceChangedEvent() {
+    void shouldHandleUrlAddEvent() {
 
         UrlAddedEvent urlAddedEvent = new UrlAddedEvent("http://testadress");
 
